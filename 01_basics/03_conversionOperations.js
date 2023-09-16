@@ -28,3 +28,5 @@ let numberToString = String(num)
 console.log(typeof num);
 console.log(typeof numberToString);
 console.log(numberToString);
+
+
