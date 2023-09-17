@@ -37,3 +37,28 @@ const myFunction = function() {
 // console.log(typeof myFunction);  // function
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// **********************************************
+
+//Stack (Primitive) -> here we get a copy of memory,
+// Heap (Non-Primitive) -> here we get a reference of memory
+
+let name1 = "Snadip"            // Primitive type 
+let name2 = name1
+name2 = "Something change"
+
+console.log(name1);
+console.log(name2);
+
+let userOne = {                 // Non-primitive type 
+    email : "sandip@gmail.com",
+    age : 23
+}
+
+let userTwo = userOne
+userTwo.email = "change@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
