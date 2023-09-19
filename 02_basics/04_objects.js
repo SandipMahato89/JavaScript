@@ -27,7 +27,7 @@ const obj4 = {5: 'a', 6: 'b'}
 // const obj3 = { obj1, obj2}
 // const obj3 = Object.assign({}, obj1, obj2, obj4)
 const obj3 = {...obj1, ...obj2}
-console.log(obj3);
+// console.log(obj3);
 
 // console.log(obj3);
 
@@ -43,11 +43,36 @@ const users = [
     },
 ]
 
-console.log(users[1].name);
-console.log(instaUser);
+// console.log(users[1].name);
+// console.log(instaUser);
 
-console.log(Object.keys(instaUser));
-console.log(Object.values(instaUser));
-console.log(Object.entries(instaUser));
+// console.log(Object.keys(instaUser));
+// console.log(Object.values(instaUser));
+// console.log(Object.entries(instaUser));
 
-console.log(instaUser.hasOwnProperty('isLoggedIn'));
+// console.log(instaUser.hasOwnProperty('isLoggedIn'));
+
+// ********** object destructuring ***********
+
+const course = {
+    coursename : "JavaScript",
+    price : "2000",
+    courseInstructure : "sandip"
+
+}
+
+const {courseInstructure: instructure} = course
+// console.log(courseInstructure);
+console.log(instructure); 
+
+// {
+//     "name":"sandip",
+//     "coursename": "computer",
+//     "price": "999"
+// }
+
+[
+    {},
+    {},
+    {},
+]
