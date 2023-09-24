@@ -26,7 +26,31 @@
     addLanguage('Python')
     addLanguage('Java')
 
-    function add
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('C/C++')
+
+    //Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);
+    // secondLang.innerHTML = 'Bhai lang'
+    const newli = document.createElement('li')
+    newli.textContent = 'Bhai Lang'
+    secondLang.replaceWith(newli)
+
+    //edit
+
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = "<li>TypeScript</li>"
+
+    //remove 
+
+    const lastLang = document.querySelector('li:nth-child(2)')
+    lastLang.remove()
 
 </script>
 </html>
